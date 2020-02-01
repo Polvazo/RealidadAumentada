@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+        android:id="@+id/container_home"
+                android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp"
+            android:gravity="right">
+
+
+
+        <ImageView
+                android:id="@+id/btn_ic_carr"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:elevation="4dp"
+                android:src="@mipmap/icon_carro" />
+
+        <ImageView
+                android:id="@+id/id_casa"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn_ic_carr"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:elevation="4dp"
+                android:src="@mipmap/icon_hotel_2" />
+
+        <ImageView
+                android:id="@+id/btn_ic_hotel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/id_casa"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:elevation="4dp"
+                android:src="@mipmap/icon_casa" />
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btn_ic_hotel"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:elevation="4dp"
+                android:src="@mipmap/icon_plato" />
+
+
+    </RelativeLayout>
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:id="@+id/map"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    </fragment>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:clipToPadding="false"
+            android:paddingStart="5dp"
+            android:paddingEnd="35dp"
+            android:id="@+id/lista_comercio"
+            android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

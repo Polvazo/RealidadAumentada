@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "528099765710",
+    "firebase_url": "https://mi-mundo-go.firebaseio.com",
+    "project_id": "mi-mundo-go",
+    "storage_bucket": "mi-mundo-go.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528099765710:android:b64a4fd77cefbfa92bcf9f",
+        "android_client_info": {
+          "package_name": "com.bbva.hackaton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528099765710-dkbr3vvj8819q833qp7mlepmkj33qo1i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bbva.hackaton",
+            "certificate_hash": "f4b0e9b6240ad36235043735547e6501ef76c53b"
+          }
+        },
+        {
+          "client_id": "528099765710-irdb57tv0tj4rqnvn0eclhd2pltjm0sf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV6VmK522hAcBsFy9LPGGU2k7pdlf4B3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528099765710-irdb57tv0tj4rqnvn0eclhd2pltjm0sf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

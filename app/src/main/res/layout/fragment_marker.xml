@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="60dp">
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                android:id="@+id/img_local"
+                android:src="@drawable/logo_defaul_local"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/txt_nombre_lugar"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Pollería Pardos"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_nombre_lugar"
+                android:id="@+id/txt_direccion"
+                android:text="San Isidro Cuadra 26"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+

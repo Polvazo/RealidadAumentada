@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:background="#00A7A7"
+              android:layout_height="match_parent">
+
+
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_margin="20dp"
+            android:id="@+id/id_close_banner"
+    android:src="@drawable/ic_close"/>
+
+
+
+    <ImageView
+            android:layout_below="@+id/id_close_banner"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    android:src="@drawable/lukita_letra"
+    android:id="@+id/img_letra_lukita"/>
+
+    <EditText android:layout_width="match_parent"
+              android:background="@drawable/background_edit_text_lukita"
+              android:padding="10dp"
+              android:layout_below="@+id/img_letra_lukita"
+              android:layout_margin="20dp"
+              android:inputType="number"
+              android:id="@+id/et_numero_celular"
+              android:hint="Ingrese numero celular"
+              android:layout_height="wrap_content"/>
+
+    <EditText android:layout_width="match_parent"
+              android:inputType="numberDecimal"
+              android:background="@drawable/background_edit_text_lukita"
+              android:padding="10dp"
+              android:layout_below="@+id/et_numero_celular"
+              android:layout_marginRight="20dp"
+              android:layout_marginLeft="20dp"
+              android:id="@+id/et_monto_pagar"
+              android:hint="Ingrese monto a pagar"
+              android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:id="@+id/btn_realizar_pago"
+            android:layout_below="@+id/et_monto_pagar"
+    android:text="Pagar"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+    android:background="#005866"/>
+
+    <ImageView
+            android:id="@+id/img_lukita"
+            android:layout_below="@id/btn_realizar_pago"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/luquita_fondo"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>

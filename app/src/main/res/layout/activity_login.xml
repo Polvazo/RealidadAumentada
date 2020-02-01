@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LoginActivity"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/degraded_login">
+
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scaleType="fitXY" android:id="@+id/imageView2"/>
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/logo_mvp_login"
+               app:layout_constraintTop_toTopOf="@+id/imageView2"
+               app:layout_constraintStart_toEndOf="@+id/imageView2"
+               app:layout_constraintEnd_toStartOf="@+id/imageView2"
+               android:id="@+id/imageView3"/>
+    <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2" app:layout_constraintVertical_bias="0.26">
+
+        <TextView
+                android:text="Documento"
+                style="@style/textViewBeneficios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_tipo_documento"
+                android:inputType="number"
+                android:hint="Seleccione documento"
+                android:id="@+id/et_documento"
+                android:focusable="false"
+                style="@style/editTextBeneficios"/>
+
+        <TextView
+                android:text="Número de documento"
+                style="@style/textViewBeneficios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_account"
+                android:inputType="number"
+                android:hint="Ingrese documento"
+                android:id="@+id/et_num_documento"
+                style="@style/editTextBeneficios"/>
+
+        <TextView
+                android:text="Contraseña"
+                style="@style/textViewBeneficios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_remove_red_eye_black_24dp"
+                android:hint="Ingrese contraseña"
+                android:inputType="numberPassword"
+                android:id="@+id/et_password"
+                style="@style/editTextBeneficios"/>
+
+        <CheckBox android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Recordar usuario"
+                  android:visibility="gone"
+                  android:textColor="@color/blanco"
+                  android:buttonTint="@color/blanco"
+                  android:layout_marginTop="8sp"
+                  android:layout_gravity="right"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingresar"
+                android:id="@+id/btn_login"
+                android:layout_marginTop="8sp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/blanco"
+                android:textSize="15dp"
+                android:drawableTint="@color/blanco"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"/>
+
+
+    </LinearLayout>
+
+    <include
+            android:id="@+id/loading_login"
+            android:visibility="gone"
+            layout="@layout/loading_api"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

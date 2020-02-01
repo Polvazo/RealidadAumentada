@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_detalle_promocion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.DetallePromocion">
+
+    <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_detalle_nombre_comercial"
+                          android:text="Local"
+                          android:textSize="18sp"
+                          android:textColor="@color/red"
+                          android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent"
+                          android:layout_marginTop="15dp"
+                          android:layout_height="wrap_content"
+                          android:text="Promocion"
+                          android:id="@+id/txt_detalle_descripcion_promocion"
+                          android:textColor="@color/dark_gray"/>
+
+
+                <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/metodo_de_pago"
+                        android:text="Paga con"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10sp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_below="@+id/metodo_de_pago"
+                        android:id="@+id/linear_metodos_pagos"
+                        android:layout_height="wrap_content">
+
+
+                    <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/img_pago_lukita"
+                            android:src="@mipmap/ic_pago_lukita"/>
+                    <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/ic_pago_moneda"/>
+                    <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/ic_pago_tarjeta"/>
+                </LinearLayout>
+
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Funciones laborales"
+                          android:layout_marginTop="20dp"
+                          android:textSize="18sp"
+                          android:textColor="@color/red"
+                          android:textStyle="bold"/>
+                <GridLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:rowCount="4"
+                        android:columnCount="2">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Ventas:"
+                              android:layout_column="0"
+                              android:layout_row="0"
+                              android:textStyle="bold"
+                              android:textColor="@color/dark_gray"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Si"
+                              android:id="@+id/flag_puntos_vida"
+                              android:layout_gravity="right"
+                              android:layout_column="1"
+                              android:layout_row="0"
+                              android:textColor="@color/dark_gray"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Marketing:"
+                              android:layout_column="0"
+                              android:layout_row="1"
+                              android:textStyle="bold"
+                              android:textColor="@color/dark_gray"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:id="@+id/flag_pago_sin_intereses"
+                              android:layout_height="wrap_content"
+                              android:text="Si"
+                              android:layout_gravity="right"
+                              android:layout_column="1"
+                              android:layout_row="1"
+                              android:textColor="@color/dark_gray"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Reuniones"
+                              android:layout_column="0"
+                              android:layout_row="2"
+                              android:textStyle="bold"
+                              android:textColor="@color/dark_gray"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Si"
+                              android:layout_gravity="right"
+                              android:id="@+id/flag_tarjeta_credito"
+                              android:layout_column="1"
+                              android:layout_row="2"
+                              android:textColor="@color/dark_gray"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Desarrollo"
+                              android:layout_column="0"
+                              android:layout_row="3"
+                              android:textStyle="bold"
+                              android:textColor="@color/dark_gray"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/flag_tarjeta_debito"
+                              android:text="Si"
+                              android:layout_gravity="right"
+                              android:layout_column="1"
+                              android:layout_row="3"
+                              android:textColor="@color/dark_gray"/>
+
+                </GridLayout>
+
+
+                <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Te puede interesar"
+                        android:layout_marginTop="20dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/ic_lukita_mini_prestamo"
+
+                        android:src="@drawable/play4"/>
+
+                <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/ic_tarjeta_bbva"
+                        android:src="@drawable/reunion"/>
+            </LinearLayout>
+
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Descripcion de la empresa"
+                          android:layout_marginTop="20dp"
+                          android:textSize="18sp"
+                          android:textColor="@color/red"
+                          android:textStyle="bold"/>
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_marginTop="15dp"
+                          android:layout_height="wrap_content"
+                          android:text="Terminos y Condiciones"
+                          android:id="@+id/txt_detalle_terminos_condiciones"
+                          android:textColor="@color/dark_gray"/>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

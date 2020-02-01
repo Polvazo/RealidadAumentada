@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MenuActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blanco"
+                android:elevation="1dp"
+                android:theme="@style/ThemeTolbar"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <EditText
+                    android:paddingStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:id="@+id/id_buscar_lugar"
+                    android:layout_width="match_parent"
+                    android:textSize="13dp"
+                    android:drawablePadding="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Buscar lugares favoritos.."
+                    android:textColorHint="@color/dark_gray"
+                    android:drawableEnd="@drawable/ic_search"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/background_edit_text_oscuro">
+
+
+            </EditText>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp"
+            android:gravity="right">
+
+        <ImageView
+                android:id="@+id/btn_changed_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="10dp"
+                android:src="@drawable/bbva_ar_blue_logo_android" />
+    </RelativeLayout>
+
+
+
+    <include layout="@layout/content_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

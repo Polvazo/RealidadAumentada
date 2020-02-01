@@ -1,0 +1,147 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.bbva.hackaton.activity.AugmentedImageActivity">
+
+    <android.opengl.GLSurfaceView
+            android:id="@+id/surfaceview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"/>
+
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_back_presed_qr"
+            android:layout_margin="20dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_back_pressed"/>
+
+    <ImageView
+
+            android:id="@+id/image_view_fit_to_scan"
+            android:layout_width="match_parent"
+            android:src="@drawable/fit_to_scan_bbva_ar_white"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            />
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card_logo_bbva_ar"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:visibility="invisible"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_below="@+id/img_logo"
+            android:padding="30dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:foreground="@drawable/background_img_promocion"
+                    android:src="@drawable/img_default_promocion"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_promocion_1"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/transparent"
+                    android:id="@+id/txt_descripcion_promocion_1"
+                    android:textColor="@color/blanco"
+                    android:text="Nombre de la promocion"
+                    android:padding="5dp"
+                    android:textSize="11dp"
+                    android:textStyle="bold"
+                    android:layout_above="@+id/relative_2"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/txt_id_convenio_1"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/txt_id_posicion_latitud_1"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/txt_id_posicion_longitud_1"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                    android:id="@+id/relative_2"
+                    android:layout_below="@+id/img_promocion_1"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/background_text_item"
+                        android:text="PROMO"
+                        android:id="@+id/txt_default_promo"
+                        android:textStyle="bold"
+                        android:padding="5sp"
+                        android:textColor="@color/blanco"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:layout_alignStart="@+id/txt_default_promo"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/background_text_item_categoria"
+                        android:text="PROMO"
+                        android:id="@+id/txt_categoria_1"
+                        android:textStyle="bold"
+                        android:padding="5sp"
+                        android:textColor="@color/blanco"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/txt_default_promo" android:layout_marginStart="65dp"/>
+
+                <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/txt_default_promo"
+                        android:layout_height="wrap_content"
+                        android:text="nombre_lugar"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/txt_nombre_lugar_1"
+                        />
+                <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/img_punto_partida"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/security_and_navigation_place"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/txt_nombre_lugar_1"
+                        android:layout_height="wrap_content"
+                        android:text="nombre_lugar"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/black"
+                        android:id="@+id/txt_promocion_1"
+                        />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
